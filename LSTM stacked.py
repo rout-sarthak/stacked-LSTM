@@ -80,6 +80,8 @@ regressor.add(Dropout(0.2))
 # to return any more sequences. Since thats' the default value we can remove it 
 regressor.add(LSTM (units = 50))
 regressor.add(Dropout(0.2))
+#Here I haven't added more layers as there commonly there is a case of diminish-
+#ing returns beyond the 4th layer
 
 #Adding the output layer by using Dense
 regressor.add(Dense(units = 1))
